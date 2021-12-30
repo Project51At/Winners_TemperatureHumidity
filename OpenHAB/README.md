@@ -1,4 +1,6 @@
 # Winners_TemperatureHumidity
+![Winners_TemperatureHumidity_OpenHAB](https://user-images.githubusercontent.com/51090559/147771705-4fdec404-5184-4d47-8d9b-a7ab52838e02.png)
+
 Configuration is tested with
 - openHAB
     - openHAB 3.2 Release Build
