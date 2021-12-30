@@ -2,6 +2,8 @@
 reading a temerature and humidity modbus sensor from 'Winners' with
 - openHAB
 
+![Winners_TemperatureHumidity](https://user-images.githubusercontent.com/51090559/147771810-cbe96977-82fe-4374-9a76-127db4025c80.jpg)
+
 ## Serial parameters
 baud rate       : 9600\
 data bits       : 8\
