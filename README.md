@@ -11,11 +11,11 @@ To change the client id following command has to be send (in the example the cli
 	
 The byte values have the follwing meanings	
 
-	Station		0x00			  ->	 	0	-> BoradCast
-	CMD			0x06			    ->		FC6	-> Preset Single Register
-	StartAddr	0x00 0x00		->		0
-	RegValue	0x00 0x02		->		2	-> New client id
-	CRC			0x09 0xDA	
+	Station		0x00		->	0	-> BoradCast
+	CMD		0x06		->	FC6	-> Preset Single Register
+	StartAddr	0x00 0x00	->	0
+	RegValue	0x00 0x02	->	2	-> New client id
+	CRC		0x09 0xDA	
 
 please note when changing the address, there can be only one slave device on the bus, otherwise all slave devices will be changed.
 
