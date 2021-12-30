@@ -1,0 +1,12 @@
+//
+//	@author			Helge Klug
+//	@copyright		Copyright (c) 2021 Helge Klug
+//
+sitemap Modbus_WinnersTemperatureHumidity label="Modbus Sensor : Winners - Temperature / Humidity"
+{
+	Frame  item=gModbusSensor
+	{
+		Text	item=Modbus_WinnersTemperatureHumidity_Temperature
+		Text	item=Modbus_WinnersTemperatureHumidity_Humidity
+	}
+}

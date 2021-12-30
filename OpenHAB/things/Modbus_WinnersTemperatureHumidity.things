@@ -1,0 +1,22 @@
+//
+//	@author			Helge Klug
+//	@copyright		Copyright (c) 2021 Helge Klug
+//
+Bridge modbus:serial:WinnersTemperatureHumidity 	[
+									port="/dev/ttyUSB0",
+									id=2,
+									baud=9600,
+									stopBits="1",
+									parity="none",
+									dataBits=8,
+									encoding="rtu",
+									receiveTimeoutMillis=1500,			// default: 1500
+									timeBetweenTransactionsMillis=35 	// default: 35
+								]
+{
+	Bridge poller SensorData 			[ 	start=0, length=2, refresh=5000, type="holding"]
+	{
+		Thing data temperature 			[ 	readStart="0", 		readValueType="uint16",	readTransform="JS(Winners_TemperatureHumidity.js)"]
+		Thing data Humidity 			[ 	readStart="1", 		readValueType="uint16",	readTransform="JS(Winners_TemperatureHumidity.js)"]
+	}
+}

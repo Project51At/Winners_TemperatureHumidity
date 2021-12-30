@@ -1,0 +1,9 @@
+//
+//	@author			Helge Klug
+//	@copyright		Copyright (c) 2021 Helge Klug
+//
+
+Group			gModbusSensor										"Modbus Sensor"
+
+Number			Modbus_WinnersTemperatureHumidity_Temperature		"Temp [%.1f °C]"		<temperature>	(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:SensorData:temperature:number"}
+Number			Modbus_WinnersTemperatureHumidity_Humidity			"Feuchte [%.1f %%]"		<humidity>		(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:SensorData:Humidity:number"}
