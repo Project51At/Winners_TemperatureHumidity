@@ -12,7 +12,7 @@ parity          : no\
 Device address  : can be set to 1-255, the default is 1
 
 ## wirering
-Gelb    :   5V0\
+Gelb    :   9..36V\
 Black   :   GND\
 Red     :   A-\
 Green   :   B-\
