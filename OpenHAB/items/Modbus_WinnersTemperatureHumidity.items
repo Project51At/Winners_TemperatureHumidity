@@ -5,5 +5,5 @@
 
 Group			gModbusSensor										"Modbus Sensor"
 
-Number			Modbus_WinnersTemperatureHumidity_Temperature		"Temp [%.1f °C]"		<temperature>	(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:SensorData:temperature:number"}
-Number			Modbus_WinnersTemperatureHumidity_Humidity			"Feuchte [%.1f %%]"		<humidity>		(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:SensorData:Humidity:number"}
+Number			Modbus_WinnersTemperatureHumidity_Temperature		"Temp [%.1f °C]"		<temperature>	(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:sensorData:temperature:number"}
+Number			Modbus_WinnersTemperatureHumidity_Humidity			"Feuchte [%.1f %%]"		<humidity>		(gModbusSensor)		{ channel="modbus:data:WinnersTemperatureHumidity:sensorData:humidity:number"}
