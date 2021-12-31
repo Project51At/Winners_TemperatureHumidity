@@ -14,7 +14,7 @@ Bridge modbus:serial:WinnersTemperatureHumidity 	[
 									timeBetweenTransactionsMillis=35 	// default: 35
 								]
 {
-	Bridge poller SensorData 			[ 	start=0, length=2, refresh=5000, type="holding"]
+	Bridge poller sensorData 			[ 	start=0, length=2, refresh=5000, type="holding"]
 	{
 		Thing data temperature 			[ 	readStart="0", 		readValueType="uint16",	readTransform="JS(Winners_TemperatureHumidity.js)"]
 		Thing data humidity 			[ 	readStart="1", 		readValueType="uint16",	readTransform="JS(Winners_TemperatureHumidity.js)"]
